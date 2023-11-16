@@ -49,11 +49,12 @@
                 for(var i=0; i<results.length; i++){ 
                     var data=results[i].get("text"); 
                     var update=results[i].get("updateDate"); 
-                    msg += data + ":" + update; 
+                    msg += data + ":" + update + "<br>"; 
                     } 
                 $("#message").html(msg); 
             }) 
         }
+        
     </script>
 </head>
 
@@ -64,8 +65,8 @@
         <input id="value" type="text" value="Hello, mBaaS!">
     </div>
     <div id="button">
-        <button id="btnA" class="btn" onclick="register()">Register</button>
-        <button id="btnB" class="btn" onclick="fetch()">Fetch</button>
+        <button id="btnA" class="btn" onclick="register()">Regist</button> 
+        <button id="btnB" class="btn" onclick="fetch()">Fetch</button> 
         <button id="btnC" class="btn" onclick="fetchAll()">Fetch All</button>
     </div>
     <div id="message">message area</div>
